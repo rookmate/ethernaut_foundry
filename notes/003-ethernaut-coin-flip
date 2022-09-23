@@ -1,0 +1,12 @@
+### There’s no such thing as true randomness
+
+forge init 003-ethernaut-coin-flip
+forge install OpenZeppelin/openzeppelin-contracts
+
+### Check project
+
+Create Etherscan account and creat free APIkey to verify contract
+
+forge create --rpc-url $RINK_RPC --private-key $MM_PK src/AutoGuess.sol:AutoGuessFlip --verify --etherscan-api-key $FOUNDRY_ETHERSCAN_API_KEY
+
+Write contract on Etherscan 10 times then submit it
