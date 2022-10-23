@@ -1,0 +1,400 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "payable",
+      "type": "constructor"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "fallback"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address payable",
+          "name": "_contract",
+          "type": "address"
+        }
+      ],
+      "name": "deleteToForceBalance",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405260ac806100126000396000f3fe608060405260043610601d5760003560e01c8063abc1445614602557005b36602357005b005b348015603057600080fd5b506023603c3660046048565b806001600160a01b0316ff5b600060208284031215605957600080fd5b81356001600160a01b0381168114606f57600080fd5b939250505056fea2646970667358221220e89ec08c5fbe5526d12a13e82151fd3d8c24869e38f218873a30934fd5d3084664736f6c63430008110033",
+    "sourceMap": "296:361:8:-:0;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405260043610601d5760003560e01c8063abc1445614602557005b36602357005b005b348015603057600080fd5b506023603c3660046048565b806001600160a01b0316ff5b600060208284031215605957600080fd5b81356001600160a01b0381168114606f57600080fd5b939250505056fea2646970667358221220e89ec08c5fbe5526d12a13e82151fd3d8c24869e38f218873a30934fd5d3084664736f6c63430008110033",
+    "sourceMap": "296:361:8:-:0;;;;;;;;;;;;;;;;;;;;;;;;;355:110;;;;;;;;;;-1:-1:-1;355:110:8;;;;;:::i;:::-;445:9;-1:-1:-1;;;;;432:23:8;;14:294:15;81:6;134:2;122:9;113:7;109:23;105:32;102:52;;;150:1;147;140:12;102:52;176:23;;-1:-1:-1;;;;;228:31:15;;218:42;;208:70;;274:1;271;264:12;208:70;297:5;14:294;-1:-1:-1;;;14:294:15:o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "deleteToForceBalance(address)": "abc14456"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"payable\",\"type\":\"constructor\"},{\"stateMutability\":\"payable\",\"type\":\"fallback\"},{\"inputs\":[{\"internalType\":\"address payable\",\"name\":\"_contract\",\"type\":\"address\"}],\"name\":\"deleteToForceBalance\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/attacks/07-Force.sol\":\"ForceBalance\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\"]},\"sources\":{\"src/attacks/07-Force.sol\":{\"keccak256\":\"0xef88b81f9358644e6738bba58250b176e253718e4a74f69b9c8a3cda2eda92bb\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://596a44e761e435de99f476c34b832fbc3b091c4214bb503a2bd758f6df3c3bbb\",\"dweb:/ipfs/QmSpGrBuDUS6gdFrKztafaCoRp9J6i4Ebvh2VXnwFc4VHg\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "payable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "payable",
+          "type": "fallback"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address payable",
+              "name": "_contract",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "deleteToForceBalance"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "payable",
+          "type": "receive"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/attacks/07-Force.sol": "ForceBalance"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/attacks/07-Force.sol": {
+        "keccak256": "0xef88b81f9358644e6738bba58250b176e253718e4a74f69b9c8a3cda2eda92bb",
+        "urls": [
+          "bzz-raw://596a44e761e435de99f476c34b832fbc3b091c4214bb503a2bd758f6df3c3bbb",
+          "dweb:/ipfs/QmSpGrBuDUS6gdFrKztafaCoRp9J6i4Ebvh2VXnwFc4VHg"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/attacks/07-Force.sol",
+    "id": 1366,
+    "exportedSymbols": {
+      "Force": [
+        1342
+      ],
+      "ForceBalance": [
+        1365
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:706:8",
+    "nodes": [
+      {
+        "id": 1341,
+        "nodeType": "PragmaDirective",
+        "src": "39:24:8",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".16"
+        ]
+      },
+      {
+        "id": 1342,
+        "nodeType": "ContractDefinition",
+        "src": "65:119:8",
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Force",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          1342
+        ],
+        "name": "Force",
+        "nameLocation": "74:5:8",
+        "scope": 1366,
+        "usedErrors": []
+      },
+      {
+        "id": 1365,
+        "nodeType": "ContractDefinition",
+        "src": "296:361:8",
+        "nodes": [
+          {
+            "id": 1346,
+            "nodeType": "FunctionDefinition",
+            "src": "324:25:8",
+            "body": {
+              "id": 1345,
+              "nodeType": "Block",
+              "src": "347:2:8",
+              "statements": []
+            },
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 1343,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "336:2:8"
+            },
+            "returnParameters": {
+              "id": 1344,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "347:0:8"
+            },
+            "scope": 1365,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 1356,
+            "nodeType": "FunctionDefinition",
+            "src": "355:110:8",
+            "body": {
+              "id": 1355,
+              "nodeType": "Block",
+              "src": "422:43:8",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 1352,
+                        "name": "_contract",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1348,
+                        "src": "445:9:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      ],
+                      "id": 1351,
+                      "name": "selfdestruct",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": -21,
+                      "src": "432:12:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_selfdestruct_nonpayable$_t_address_payable_$returns$__$",
+                        "typeString": "function (address payable)"
+                      }
+                    },
+                    "id": 1353,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "432:23:8",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1354,
+                  "nodeType": "ExpressionStatement",
+                  "src": "432:23:8"
+                }
+              ]
+            },
+            "functionSelector": "abc14456",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deleteToForceBalance",
+            "nameLocation": "364:20:8",
+            "parameters": {
+              "id": 1349,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1348,
+                  "mutability": "mutable",
+                  "name": "_contract",
+                  "nameLocation": "402:9:8",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1356,
+                  "src": "386:25:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  },
+                  "typeName": {
+                    "id": 1347,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "386:15:8",
+                    "stateMutability": "payable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "385:27:8"
+            },
+            "returnParameters": {
+              "id": 1350,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "422:0:8"
+            },
+            "scope": 1365,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 1360,
+            "nodeType": "FunctionDefinition",
+            "src": "528:29:8",
+            "body": {
+              "id": 1359,
+              "nodeType": "Block",
+              "src": "555:2:8",
+              "statements": []
+            },
+            "implemented": true,
+            "kind": "receive",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 1357,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "535:2:8"
+            },
+            "returnParameters": {
+              "id": 1358,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "555:0:8"
+            },
+            "scope": 1365,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 1364,
+            "nodeType": "FunctionDefinition",
+            "src": "625:30:8",
+            "body": {
+              "id": 1363,
+              "nodeType": "Block",
+              "src": "653:2:8",
+              "statements": []
+            },
+            "implemented": true,
+            "kind": "fallback",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 1361,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "633:2:8"
+            },
+            "returnParameters": {
+              "id": 1362,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "653:0:8"
+            },
+            "scope": 1365,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ForceBalance",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          1365
+        ],
+        "name": "ForceBalance",
+        "nameLocation": "305:12:8",
+        "scope": 1366,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 8
+}

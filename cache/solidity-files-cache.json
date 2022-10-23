@@ -11,164 +11,8 @@
     ]
   },
   "files": {
-    "lib/forge-std/src/Script.sol": {
-      "lastModificationDate": 1660587414124,
-      "contentHash": "b313d0193442f5a12848be9c422a0064",
-      "sourceName": "lib/forge-std/src/Script.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "metadata": {
-            "bytecodeHash": "ipfs"
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ]
-            }
-          },
-          "evmVersion": "london",
-          "libraries": {}
-        }
-      },
-      "imports": [
-        "lib/forge-std/src/Vm.sol",
-        "lib/forge-std/src/console.sol",
-        "lib/forge-std/src/console2.sol"
-      ],
-      "versionRequirement": ">=0.6.0, <0.9.0",
-      "artifacts": {
-        "Script": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "Script.sol/Script.json"
-        }
-      }
-    },
-    "lib/forge-std/src/Vm.sol": {
-      "lastModificationDate": 1660587414124,
-      "contentHash": "87cafdea05acb705b59c6fa2a685d229",
-      "sourceName": "lib/forge-std/src/Vm.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "metadata": {
-            "bytecodeHash": "ipfs"
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ]
-            }
-          },
-          "evmVersion": "london",
-          "libraries": {}
-        }
-      },
-      "imports": [],
-      "versionRequirement": ">=0.6.0, <0.9.0",
-      "artifacts": {
-        "Vm": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "Vm.sol/Vm.json"
-        }
-      }
-    },
-    "lib/forge-std/src/console.sol": {
-      "lastModificationDate": 1660587414128,
-      "contentHash": "100b8a33b917da1147740d7ab8b0ded3",
-      "sourceName": "lib/forge-std/src/console.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "metadata": {
-            "bytecodeHash": "ipfs"
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ]
-            }
-          },
-          "evmVersion": "london",
-          "libraries": {}
-        }
-      },
-      "imports": [],
-      "versionRequirement": ">=0.4.22, <0.9.0",
-      "artifacts": {
-        "console": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "console.sol/console.json"
-        }
-      }
-    },
-    "lib/forge-std/src/console2.sol": {
-      "lastModificationDate": 1660587414128,
-      "contentHash": "5df91f8e93efbfcccf68973dc1b74a70",
-      "sourceName": "lib/forge-std/src/console2.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "metadata": {
-            "bytecodeHash": "ipfs"
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ]
-            }
-          },
-          "evmVersion": "london",
-          "libraries": {}
-        }
-      },
-      "imports": [],
-      "versionRequirement": ">=0.4.22, <0.9.0",
-      "artifacts": {
-        "console2": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "console2.sol/console2.json"
-        }
-      }
-    },
     "lib/openzeppelin-contracts/contracts/access/Ownable.sol": {
-      "lastModificationDate": 1660588296844,
+      "lastModificationDate": 1660588296000,
       "contentHash": "e436cea06129be2c73cda4b1acc848b5",
       "sourceName": "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
       "solcConfig": {
@@ -189,7 +33,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -203,12 +48,12 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "Ownable": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "Ownable.sol/Ownable.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "Ownable.sol/Ownable.json"
         }
       }
     },
     "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol": {
-      "lastModificationDate": 1660588296860,
+      "lastModificationDate": 1660588296000,
       "contentHash": "92cc1aad41bdb18ca20f6e03f461de7d",
       "sourceName": "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol",
       "solcConfig": {
@@ -229,7 +74,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -245,12 +91,12 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "ERC20": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "ERC20.sol/ERC20.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "ERC20.sol/ERC20.json"
         }
       }
     },
     "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol": {
-      "lastModificationDate": 1660588296860,
+      "lastModificationDate": 1660588296000,
       "contentHash": "ad7c2d0af148c8f9f097d65deeb4da6b",
       "sourceName": "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
       "solcConfig": {
@@ -271,7 +117,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -283,12 +130,12 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "IERC20": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "IERC20.sol/IERC20.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "IERC20.sol/IERC20.json"
         }
       }
     },
     "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
-      "lastModificationDate": 1660588296860,
+      "lastModificationDate": 1660588296000,
       "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
       "sourceName": "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol",
       "solcConfig": {
@@ -309,7 +156,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -323,12 +171,12 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "IERC20Metadata": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "IERC20Metadata.sol/IERC20Metadata.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "IERC20Metadata.sol/IERC20Metadata.json"
         }
       }
     },
     "lib/openzeppelin-contracts/contracts/utils/Context.sol": {
-      "lastModificationDate": 1660588296864,
+      "lastModificationDate": 1660588296000,
       "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
       "sourceName": "lib/openzeppelin-contracts/contracts/utils/Context.sol",
       "solcConfig": {
@@ -349,7 +197,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -361,12 +210,12 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "Context": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "Context.sol/Context.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "Context.sol/Context.json"
         }
       }
     },
     "lib/openzeppelin-contracts/contracts/utils/math/SafeMath.sol": {
-      "lastModificationDate": 1660588296864,
+      "lastModificationDate": 1660588296000,
       "contentHash": "2337f0279507b5edf14a07067adf0d05",
       "sourceName": "lib/openzeppelin-contracts/contracts/utils/math/SafeMath.sol",
       "solcConfig": {
@@ -387,7 +236,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -399,14 +249,14 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "SafeMath": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "SafeMath.sol/SafeMath.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "SafeMath.sol/SafeMath.json"
         }
       }
     },
-    "script/Counter.s.sol": {
-      "lastModificationDate": 1660587412676,
-      "contentHash": "0705c52104730a78aef4aa6694175c81",
-      "sourceName": "script/Counter.s.sol",
+    "src/attacks/03-AutoGuess.sol": {
+      "lastModificationDate": 1665316785374,
+      "contentHash": "8701f7e83ffabd61ad0b7de892b2afac",
+      "sourceName": "src/attacks/03-AutoGuess.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -425,50 +275,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ]
-            }
-          },
-          "evmVersion": "london",
-          "libraries": {}
-        }
-      },
-      "imports": [
-        "lib/forge-std/src/Script.sol",
-        "lib/forge-std/src/Vm.sol",
-        "lib/forge-std/src/console.sol",
-        "lib/forge-std/src/console2.sol"
-      ],
-      "versionRequirement": "^0.8.13",
-      "artifacts": {
-        "CounterScript": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "Counter.s.sol/CounterScript.json"
-        }
-      }
-    },
-    "src/03-AutoGuess.sol": {
-      "lastModificationDate": 1663622096344,
-      "contentHash": "5f46608aaef2348a8d846ee02cf6bbb9",
-      "sourceName": "src/03-AutoGuess.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "metadata": {
-            "bytecodeHash": "ipfs"
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -479,20 +287,20 @@
       "imports": [
         "lib/openzeppelin-contracts/contracts/utils/math/SafeMath.sol"
       ],
-      "versionRequirement": "^0.8.7",
+      "versionRequirement": "^0.8.17",
       "artifacts": {
         "AutoGuessFlip": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "03-AutoGuess.sol/AutoGuessFlip.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "03-AutoGuess.sol/AutoGuessFlip.json"
         },
         "CoinFlip": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "03-AutoGuess.sol/CoinFlip.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "03-AutoGuess.sol/CoinFlip.json"
         }
       }
     },
-    "src/04-Telephone.sol": {
-      "lastModificationDate": 1660677137829,
-      "contentHash": "1d71e44e85d5748588009afd6b0ab460",
-      "sourceName": "src/04-Telephone.sol",
+    "src/attacks/04-Telephone.sol": {
+      "lastModificationDate": 1665317164515,
+      "contentHash": "a948c9cfe9190ab786c3cca1dec2536e",
+      "sourceName": "src/attacks/04-Telephone.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -511,7 +319,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -522,18 +331,18 @@
       "imports": [],
       "versionRequirement": "^0.8.16",
       "artifacts": {
-        "EthernautTelephone": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "04-Telephone.sol/EthernautTelephone.json"
+        "MsgSenderTelephone": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "04-Telephone.sol/MsgSenderTelephone.json"
         },
         "Telephone": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "04-Telephone.sol/Telephone.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "04-Telephone.sol/Telephone.json"
         }
       }
     },
-    "src/07Force.sol": {
-      "lastModificationDate": 1662152846310,
-      "contentHash": "f88280e25c3e7cc020dbb43b2f4c4cd7",
-      "sourceName": "src/07Force.sol",
+    "src/attacks/07-Force.sol": {
+      "lastModificationDate": 1665319038510,
+      "contentHash": "18516fdb3c54c3f190cdebcb4072d86e",
+      "sourceName": "src/attacks/07-Force.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -552,7 +361,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -564,17 +374,17 @@
       "versionRequirement": "^0.8.16",
       "artifacts": {
         "Force": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "07Force.sol/Force.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "07-Force.sol/Force.json"
         },
         "ForceBalance": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "07Force.sol/ForceBalance.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "07-Force.sol/ForceBalance.json"
         }
       }
     },
-    "src/09-King.sol": {
-      "lastModificationDate": 1663094869439,
+    "src/attacks/09-King.sol": {
+      "lastModificationDate": 1663094869000,
       "contentHash": "114d50be309262b0c60f765fd603b372",
-      "sourceName": "src/09-King.sol",
+      "sourceName": "src/attacks/09-King.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -593,7 +403,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -605,14 +416,14 @@
       "versionRequirement": "^0.8.13",
       "artifacts": {
         "KingTransferStuck": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "09-King.sol/KingTransferStuck.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "09-King.sol/KingTransferStuck.json"
         }
       }
     },
-    "src/10-Reentrance.sol": {
-      "lastModificationDate": 1663612510530,
-      "contentHash": "6e8131cd1a79eb676da77a568e93c328",
-      "sourceName": "src/10-Reentrance.sol",
+    "src/attacks/10-Reentrance.sol": {
+      "lastModificationDate": 1666471820458,
+      "contentHash": "122c01c80ee8d9258f07dcaedeeb0da0",
+      "sourceName": "src/attacks/10-Reentrance.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -631,7 +442,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -640,23 +452,26 @@
         }
       },
       "imports": [],
-      "versionRequirement": "^0.8.13",
+      "versionRequirement": "^0.8.17",
       "artifacts": {
         "Reentrance": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "10-Reentrance.sol/Reentrance.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "10-Reentrance.sol/Reentrance.json"
         },
         "ReentranceAtk": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "10-Reentrance.sol/ReentranceAtk.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "10-Reentrance.sol/ReentranceAtk.json"
+        },
+        "ReentranceAttack": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "10-Reentrance.sol/ReentranceAttack.json"
         },
         "SafeMath": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "10-Reentrance.sol/SafeMath.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "10-Reentrance.sol/SafeMath.json"
         }
       }
     },
-    "src/11-Elevator.sol": {
-      "lastModificationDate": 1663619251997,
+    "src/attacks/11-Elevator.sol": {
+      "lastModificationDate": 1665350213308,
       "contentHash": "3af3b2f14852267bafb070e49a1ef60c",
-      "sourceName": "src/11-Elevator.sol",
+      "sourceName": "src/attacks/11-Elevator.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -675,7 +490,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -687,20 +503,20 @@
       "versionRequirement": "^0.8.13",
       "artifacts": {
         "Building": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "11-Elevator.sol/Building.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "11-Elevator.sol/Building.json"
         },
         "Elevator": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "11-Elevator.sol/Elevator.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "11-Elevator.sol/Elevator.json"
         },
         "VirtualOverride": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "11-Elevator.sol/VirtualOverride.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "11-Elevator.sol/VirtualOverride.json"
         }
       }
     },
-    "src/21-Shop.sol": {
-      "lastModificationDate": 1663620866383,
-      "contentHash": "05d566cfcc67e8fc0c24be63e8c8330f",
-      "sourceName": "src/21-Shop.sol",
+    "src/attacks/13-GatekeeperOne.sol": {
+      "lastModificationDate": 1666462070437,
+      "contentHash": "3518d35baabcf6b6b3983babb626390e",
+      "sourceName": "src/attacks/13-GatekeeperOne.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -719,7 +535,172 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "UnlockOne": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "13-GatekeeperOne.sol/UnlockOne.json"
+        }
+      }
+    },
+    "src/attacks/14-GatekeeperTwo.sol": {
+      "lastModificationDate": 1666464122819,
+      "contentHash": "c4ae2e1c4370a53c77f43ff22ef03ec0",
+      "sourceName": "src/attacks/14-GatekeeperTwo.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "GatekeeperTwoInterface": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "14-GatekeeperTwo.sol/GatekeeperTwoInterface.json"
+        },
+        "UnlockTwo": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "14-GatekeeperTwo.sol/UnlockTwo.json"
+        }
+      }
+    },
+    "src/attacks/15-NaughtCoin.sol": {
+      "lastModificationDate": 1666524580298,
+      "contentHash": "dd2cf084e55be2945226f7d1f34c2caf",
+      "sourceName": "src/attacks/15-NaughtCoin.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "LetMeOut": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "15-NaughtCoin.sol/LetMeOut.json"
+        }
+      }
+    },
+    "src/attacks/17-Recovery.sol": {
+      "lastModificationDate": 1666525926943,
+      "contentHash": "571c338a70f89785a7fab81334589d56",
+      "sourceName": "src/attacks/17-Recovery.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "Recovery": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "17-Recovery.sol/Recovery.json"
+        },
+        "SimpleToken": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "17-Recovery.sol/SimpleToken.json"
+        }
+      }
+    },
+    "src/attacks/21-Shop.sol": {
+      "lastModificationDate": 1663620866000,
+      "contentHash": "05d566cfcc67e8fc0c24be63e8c8330f",
+      "sourceName": "src/attacks/21-Shop.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -731,20 +712,20 @@
       "versionRequirement": "^0.8.13",
       "artifacts": {
         "Buyer": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "21-Shop.sol/Buyer.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "21-Shop.sol/Buyer.json"
         },
         "Shop": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "21-Shop.sol/Shop.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "21-Shop.sol/Shop.json"
         },
         "ShopLifter": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "21-Shop.sol/ShopLifter.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "21-Shop.sol/ShopLifter.json"
         }
       }
     },
-    "src/23-Dex2.sol": {
-      "lastModificationDate": 1663959599615,
+    "src/attacks/23-Dex2.sol": {
+      "lastModificationDate": 1663959599000,
       "contentHash": "42cadbb81706745633d74330e558dd8e",
-      "sourceName": "src/23-Dex2.sol",
+      "sourceName": "src/attacks/23-Dex2.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -763,7 +744,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -782,20 +764,20 @@
       "versionRequirement": "^0.8.13",
       "artifacts": {
         "DexTwo": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "23-Dex2.sol/DexTwo.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "23-Dex2.sol/DexTwo.json"
         },
         "DexTwoExploit": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "23-Dex2.sol/DexTwoExploit.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "23-Dex2.sol/DexTwoExploit.json"
         },
         "SwappableTokenTwo": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "23-Dex2.sol/SwappableTokenTwo.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "23-Dex2.sol/SwappableTokenTwo.json"
         }
       }
     },
-    "src/26-DoubleEntryPoint.sol": {
-      "lastModificationDate": 1663966478661,
+    "src/attacks/26-DoubleEntryPoint.sol": {
+      "lastModificationDate": 1663966580000,
       "contentHash": "3255d80fff4dd7eed3ab0a474b877b00",
-      "sourceName": "src/26-DoubleEntryPoint.sol",
+      "sourceName": "src/attacks/26-DoubleEntryPoint.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -814,7 +796,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -832,28 +815,28 @@
       "versionRequirement": "^0.8.13",
       "artifacts": {
         "CryptoVault": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "26-DoubleEntryPoint.sol/CryptoVault.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "26-DoubleEntryPoint.sol/CryptoVault.json"
         },
         "DelegateERC20": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "26-DoubleEntryPoint.sol/DelegateERC20.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "26-DoubleEntryPoint.sol/DelegateERC20.json"
         },
         "DetectionBot": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "26-DoubleEntryPoint.sol/DetectionBot.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "26-DoubleEntryPoint.sol/DetectionBot.json"
         },
         "DoubleEntryPoint": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "26-DoubleEntryPoint.sol/DoubleEntryPoint.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "26-DoubleEntryPoint.sol/DoubleEntryPoint.json"
         },
         "Forta": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "26-DoubleEntryPoint.sol/Forta.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "26-DoubleEntryPoint.sol/Forta.json"
         },
         "IDetectionBot": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "26-DoubleEntryPoint.sol/IDetectionBot.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "26-DoubleEntryPoint.sol/IDetectionBot.json"
         },
         "IForta": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "26-DoubleEntryPoint.sol/IForta.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "26-DoubleEntryPoint.sol/IForta.json"
         },
         "LegacyToken": {
-          "0.8.16+commit.07a7930e.Linux.gcc": "26-DoubleEntryPoint.sol/LegacyToken.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "26-DoubleEntryPoint.sol/LegacyToken.json"
         }
       }
     }

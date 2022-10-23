@@ -1,6 +1,8 @@
 get storage location
+await web3.eth.getStorageAt("CONTRACT", 1)
 
 get data in storage location to unlock the code
+await contract.unlock("OUTPUT_OF_ABOVE")
 
 
 // SPDX-License-Identifier: MIT
