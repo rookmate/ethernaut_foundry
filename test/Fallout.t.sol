@@ -7,7 +7,7 @@ import "../src/Ethernaut.sol";
 
 contract FalloutTest is Test {
     Ethernaut ethernaut;
-    address playerAddress = address(100);
+    address playerAddress = address(6529);
 
     function setUp() public {
         ethernaut = new Ethernaut();
