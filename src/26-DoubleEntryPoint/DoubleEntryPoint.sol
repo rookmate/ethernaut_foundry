@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.13;
+pragma solidity ^0.8.17;
 
-import 'openzeppelin-contracts/contracts/access/Ownable.sol';
+import "openzeppelin-contracts/contracts/access/Ownable.sol";
 import "openzeppelin-contracts/contracts/token/ERC20/ERC20.sol";
 
 interface DelegateERC20 {
@@ -125,26 +125,5 @@ contract DoubleEntryPoint is ERC20("DoubleEntryPointToken", "DET"), DelegateERC2
     ) public override onlyDelegateFrom fortaNotify returns (bool) {
         _transfer(origSender, to, value);
         return true;
-    }
-}
-
-
-contract DetectionBot is IDetectionBot {
-    error Unauthorized();
-
-    IForta public fortaContract;
-
-    constructor (address forta) {
-        fortaContract = IForta(forta);
-    }
-
-    function handleTransaction(address user, bytes calldata msgData) public override {
-        // Make sure only Forta contract calls this
-        if(msg.sender == address(fortaContract)) revert Unauthorized();
-
-        // Raise alert
-        fortaContract.raiseAlert(user);
-
-        msgData;
     }
 }
